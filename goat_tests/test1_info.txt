@@ -1,0 +1,10 @@
+#Asserts
+assert(sim.inspect_mem(rf)[8] == 10)
+assert(sim.inspect_mem(rf)[9] == 0xFFFFFFF6)
+assert(sim.inspect_mem(rf)[10] == 0)
+#Program
+main:
+addi $t0, $t0, 10
+addi $t1, $t0, -20
+addi $t2, $t1, 10
+

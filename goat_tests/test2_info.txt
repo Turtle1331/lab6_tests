@@ -1,0 +1,22 @@
+#Asserts
+assert(sim.inspect_mem(rf)[10] == 4)
+assert(sim.inspect_mem(rf)[11] == 4)
+assert(sim.inspect_mem(d_mem)[0] == 4)
+#Program
+main:
+    addi $t0, $t0, 4
+    addi $t1, $t1, 15535
+    addi $t3, $t3, 10
+    and $t2, $t0, $t1
+    sw $t3, -4($t2)
+ 
+loop:
+    beq $t2, $t3, exit         # if ($t3 == 4) exit
+    lw $t3, -4($t2)
+    addi $t3, $t3, -1
+    sw $t3, -4($t2)
+    beq $zero, $zero, loop     # goto loop
+    
+exit:
+    lw $v0, 0($zero)           
+    beq $v0, $v0, exit 

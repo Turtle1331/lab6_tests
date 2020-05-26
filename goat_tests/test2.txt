@@ -1,0 +1,12 @@
+21080004
+21293caf
+216b000a
+01095024
+ad4bfffc
+114b0004
+8d4bfffc
+216bffff
+ad4bfffc
+1000fffb
+8c020000
+1042fffe
