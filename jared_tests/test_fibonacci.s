@@ -2,6 +2,12 @@
 
 # DO NOT DELETE THE ABOVE BASE64 LINE. IT IS USED TO LOAD INSTRUCTIONS
 
+#assert(sim.inspect_mem(rf)[2] == 987)
+#assert(sim.inspect_mem(rf)[16] == 0)
+#assert(sim.inspect_mem(rf)[17] == 1)
+#assert(sim.inspect_mem(rf)[18] == 0)
+#assert(sim.inspect_mem(rf)[10] == 10419)
+
 .text
 
 main:

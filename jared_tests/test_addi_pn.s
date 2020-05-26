@@ -2,6 +2,8 @@
 
 # DO NOT DELETE THE ABOVE BASE64 LINE. IT IS USED TO LOAD INSTRUCTIONS
 
+#assert(sim.inspect_mem(rf)[2] == -2 & 0xFFFFFFFF)
+
 .text
 
 main:

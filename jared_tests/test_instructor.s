@@ -24,6 +24,12 @@
 # One way is to write a branch that just branches to itself.
 # The CPU just keeps running that branch at the end of the main logic.
 
+
+#Asserts:
+#assert(sim.inspect_mem(d_mem)[0] == 10)
+#assert(sim.inspect_mem(rf)[8] == 10)
+
+
 .text
 
 main:

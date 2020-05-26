@@ -4,6 +4,8 @@
 
 .text
 
+#assert(sim.inspect_mem(rf)[17] == 3546218496)
+
 main:
     ori $s1, $zero, 10419
     lui $s1, 54111

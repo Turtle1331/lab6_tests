@@ -1,6 +1,8 @@
 #eyIwIjogODcyNjc3Mzc3LCAiMSI6IDI2ODY5NzYwMSwgIjIiOiA4NzI2NzczNzgsICIzIjogODcyNzQyOTE0LCAiNCI6IDI2ODUwMDk5MH0=
 
 # DO NOT DELETE THE ABOVE BASE64 LINE. IT IS USED TO LOAD INSTRUCTIONS
+#assert(sim.inspect_mem(rf)[4] == 2)
+#assert(sim.inspect_mem(rf)[5] == 2)
 
 .text
 
